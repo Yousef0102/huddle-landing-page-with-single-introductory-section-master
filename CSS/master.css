@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Violet);
+  background-image: url("../images/bg-desktop.svg");
+  font-family: "Open Sans", sans-serif;
+  height: 110vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+/* Start Design */
+main {
+}
+main .container {
+  padding: 20px 40px;
+  position: relative;
+}
+main .container .logo {
+}
+main .container .logo img {
+  width: 220px;
+}
+main .container nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  gap: 60px;
+}
+main .container nav .img img {
+  max-width: 560px;
+}
+main .container nav .img img {
+}
+main .container nav .text {
+  margin-top: 35px;
+  color: white;
+  line-height: 1.7;
+  flex: 1;
+  min-width: 350px;
+}
+main .container nav .text h2 {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+main .container nav .text p {
+  color: #e4dfdf;
+  margin-bottom: 20px;
+}
+main .container nav .text .btn {
+  border: none;
+  padding: 15px 55px;
+  border-radius: 100px;
+  color: var(--Violet);
+  box-shadow: 1px 1px 20px 1px #000;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+main .container nav .text .btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+}
+main .container .icons {
+  position: absolute;
+  right: 20px;
+}
+main .container .icons i {
+  font-size: 18px;
+  margin-right: 25px;
+  color: white;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+main .container .icons i:hover {
+  color: var(--Soft-Magenta);
+}
+footer p {
+  text-align: center;
+  margin-top: 100px;
+}
+/* End Design */
+@media (max-width: 990px) {
+  body {
+    text-align: center;
+  }
+  main .container nav {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  main .container nav .img img {
+    max-width: 450px;
+  }
+}
+@media (max-width: 530px) {
+  main .container nav .img img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 460px) {
+  nav {
+    padding-right: 20px;
+  }
+  main .container nav .text h2 {
+    font-size: 20px;
+  }
+  main .container nav .text p {
+    font-size: 14px;
+  }
+  main .container nav .img img {
+    max-width: 350px;
+  }
+  main .container nav .text .btn {
+    width: 85%;
+    margin-bottom: 50px;
+  }
+  main .container .icons {
+    position: relative;
+    text-align: center;
+    left: 20px;
+  }
+}
